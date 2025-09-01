@@ -1,0 +1,140 @@
+html{
+  scroll-behavior: smooth;
+}
+section {
+  padding-top: 80px; /* Offset for fixed navbar */
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #011120;
+  padding: 15px;
+  height: 40px;
+  margin-left: -8px;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar.hide {
+  transform: translateY(-100%);
+}
+
+.navbar.show {
+  transform: translateY(0);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  font-family: lucida sans;
+  margin-top: 10px;
+}
+
+.logo {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 5.5%;
+}
+.logo::first-letter{
+  color: #00fff2;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin-top: 0;
+  margin-right: 8%;
+  margin-bottom: 3px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: width 0.4s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  background-color: #00fff2;
+}
+
+.nav-links a.active{
+  color: #00fff2;
+}
+
+/* Hamburger Button */
+.hamburger {
+  font-size: 28px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 750px) {
+  .navbar{
+    margin-left: -5%;
+    margin-right: 0%;
+    height: 40px;
+  }
+  .hamburger {
+    display: block;
+    margin-top: 1px;
+    margin-right: 4%;
+  }
+  .nav-container{
+    margin-top: 10px;
+    height: 3px;
+  }
+  .logo{
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 3%;
+    width: 25%;
+    background-color: #00a8a0;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1;
+  }
+ 
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+@media(max-width:910px){
+    .nav-links a.active{
+      color: #7e0000;
+}
+}

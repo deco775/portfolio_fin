@@ -1,0 +1,179 @@
+.mainContainer{
+    padding-bottom: 220px;
+}
+.container h4{
+    line-height: 20%;
+    color: #ffffff;
+    font-style: italic;
+}
+.pitso{
+    color: #00fff2;
+}
+.container h2, p{
+    color: white;
+    font-family: sans-serif;
+}
+.container p{
+    font-size: 80%;
+    line-height: 1.4;
+}
+.container h2{
+    line-height: 30%;
+    font-family: sans-serif;
+}
+.container{
+    padding: 5px;
+    max-width: 40%;
+    height: 80%;
+    position: relative;
+    top: 150px;
+    left: 6.2%;
+}
+.icons{
+    display: flex;
+    column-gap: 1em;
+}
+
+.icons a{
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.homeIcn{
+    color: #00fff2;
+    border: 1px solid #00fff2;
+    border-radius: 20px;
+    transition: color 0.3s, background-color 0.3s ease-in-out;
+}
+.homeIcn:hover{
+    background-color: #00fff2;
+    color: #08223b;
+}
+.homeIcn:active{
+    background-color: #dcfffd;
+}
+
+.image{
+    width: 300px ;
+    border: 1px solid #08223b;
+    position: absolute;
+    right: 100px;
+    top: 180px;
+    border-radius: 50%;
+    background-color: #061625b9;
+    box-shadow: 20px 2px 20px #00fff29c, -1px -2px 10px #075551;   
+}
+.cvBtn{
+    color: #08223b;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #00fff2;
+    border: 1px solid #00fff2; 
+    padding: 3px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: box-shadow 0.3s, background-color 0.3s ease-in-out;
+}
+.cvBtn:hover{
+    background-color: #08223b;
+    border: 1px solid #00fff2; 
+    color: #00fff2; 
+    box-shadow: 1px 1px 5px #00fff2, -1px -1px 5px #00fff2;
+}
+.cvBtn:active{
+    background-color: #4a6c8b;
+}
+@media (max-width: 768px){
+    .container{
+        max-width: 100%;
+        left: 1%;
+        padding-top: 150px;
+        padding-bottom: 5%;
+    }
+    .image{
+        top: 160px;
+        width: 20%;
+        position: absolute;
+        right: 30%;
+        left: 30%;
+    }
+    .container h2, p{
+        font-size: 70%;
+    }
+}
+@media (max-width: 950px){
+    .image{
+        width: 30%;
+        max-width: 50%;
+    }
+    /*.container h2, p{
+        font-size: 70%;
+    }*/
+}
+@media (max-width: 450px){
+    .container h4{
+        font-size: 12px;
+    }
+}
+@media (max-width: 885px){
+    .container h2, p{
+        font-size: 130%;
+    }
+}
+/* For text Animantio */
+
+.animatedT{
+    min-width: 280px;
+}
+
+.animatedT span{
+    position: relative;
+}
+
+.animatedT span::before{
+    content: "Pitso";
+    color: #00fff2;
+    animation: words 20s infinite;
+}
+
+
+.animatedT span::after{
+    content: "";
+    position: absolute;
+    top: 1px;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #08223b;
+    border-left: 3px solid #00fff2;
+    right: -8px;
+    animation: cursor 0.9s infinite, typing 33.3s steps(15) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,33%{
+        content: "Pitso.";
+    }
+    34%,66%{
+        content: "a Full-Stack Developer.";
+    }
+    67%,100%{
+        content: "a UI/UX Engineer.";
+    }
+   
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}

@@ -1,0 +1,134 @@
+
+.contactContainer{
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+    font-size: 150%;
+    padding: auto;
+    padding-block: 8%;
+}
+.contactContainer h2{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 110%;
+}
+.emailIcon{
+    font-size: 70%;
+    color: #00fff2;
+    padding-right: 12px;
+}
+.symbol, p b{
+    color: #ffffff;
+    font-size: 85%;
+    font-weight: normal;
+}
+.inputT{
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.1em;
+}
+.inputT input{
+    font-size: 70%;
+    width: 120%;
+    height: 30px;
+}
+.inputT textarea{
+    font-size: 100%;
+    height: 110px;
+    width: 120%;
+}
+
+.icons{
+    display: flex;
+    gap: 15px;
+    padding-bottom: 30px;
+}
+.icons a{
+    font-size: 15px;
+    border: 1px solid #00fff2;
+    color: #00fff2;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 50%;
+}
+.icons a:hover{
+    background-color: #00fff2;
+    color: #08223b;
+}
+
+.icons a:active{
+    background-color: #dcfffd;
+}
+
+.cvBtn{
+    color: #08223b;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #00fff2;
+    border: 1px solid #00fff2; 
+    padding: 3px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: box-shadow 0.3s, background-color 0.3s ease-in-out;
+}
+.cvBtn:hover{
+    background-color: #08223b;
+    border: 1px solid #00fff2; 
+    color: #00fff2; 
+    box-shadow: 1px 1px 5px #00fff2, -1px -1px 5px #00fff2;
+}
+.cvBtn:active{
+    background-color: #4a6c8b;
+}
+
+.inputT button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 60%;
+    margin-left: 30%;
+    height: 35px;
+    color: #08223b;
+    font-size: 14px;
+    background-color: #00fff2;
+    border: 1px solid #00fff2; 
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, background-color 0.3s ease-in-out;
+}
+.inputT button:hover{
+    background-color: #08223b;
+    border: 1px solid #00fff2; 
+    color: #00fff2; 
+    box-shadow: 1px 1px 5px #00fff2, -1px -1px 5px #00fff2;
+}
+.inputT button:active{
+    background-color: #4a6c8b;
+}
+
+.customAlert {
+    background-color: #08223b;
+    font-size: 50%;
+    color: #00fff2;
+    padding: 3px 5px;
+    border-radius: 8px;
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+
+@media (max-width: 700px){
+    .contactContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-block: 20%;
+    }
+}

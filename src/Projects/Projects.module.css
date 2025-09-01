@@ -1,0 +1,255 @@
+
+.myPro{
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 6.5%;
+}
+
+.projectsContainer {
+    display: flex;
+    width: 90%;
+    margin-left: 6.5%;
+    margin-right: 7%;
+    flex-wrap: wrap;
+    row-gap: 18px;
+    column-gap: 15px;
+}
+.projectCard{
+    position: relative;
+    height: 350px;
+    background-color: lightpink;
+    width: 23%;
+    text-align: center;
+    border-radius: 15px; 
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+.projectCard::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Transparent initially */
+    transition: background 0.3s ease-in-out;
+  }
+  .projectCard::after {
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease-in-out;
+}
+  
+.projectCard:hover::after {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+}
+.projectCard h3{
+    color: #00fff2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 5%;
+    position: relative;
+    z-index: 1;
+}
+
+.hiddenProjects{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 15px;
+}
+button{
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.showBtn{
+    margin-left: 7%;
+    color: #08223b;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #00fff2;
+    border: 1px solid #00fff2; 
+    padding: 3px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.3s, background-color 0.3s ease-in-out;
+}
+.showBtn:hover{
+    background-color: #08223b;
+    border: 1px solid #00fff2; 
+    color: #00fff2; 
+    box-shadow: 1px 1px 5px #00fff2, -1px -1px 5px #00fff2;
+}
+.showBtn:active{
+    background-color: #4a6c8b;
+}
+.cart{
+    background-image: url(cart2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.movies{
+    background-image: url(movies4.webp);
+    background-position: center;
+    background-size: cover;
+}
+.watches{
+    background-image: url(watches2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.ai{
+    background-image: url(ai3.webp);
+    background-position: center;
+    background-size: cover;
+}
+.weather{
+    background-image: url(wea2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.slot{
+    background-image: url(slot2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.turtles{
+    background-image: url(turtle5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.dice{
+    background-image: url(dice2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.clock{
+    background-image: url(clock1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.backup{
+    background-image: url(back1.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.projectLan{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    padding-left: 3px;
+}
+.projectCard p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80%;
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20%;
+}
+.projectLan p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 8%;
+    box-shadow: 2px 2px 2px #00fff29f;
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 1px 3px;
+    position: relative;
+    z-index: 1;
+}
+.projectInfo{
+    display: none;
+}
+.projectHiddenInfo{
+    visibility: hidden;
+}
+.projectCard:hover{
+    .projectInfo{
+        display: block;
+    }
+    .projectHiddenInfo{
+        visibility: visible;
+    }
+}
+.projectInfo a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70%;
+    font-weight: bold;
+    color: #000000;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    background-color: #00fff2;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+.projectHiddenInfo a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70%;
+    font-weight: 700;
+    color: #000000;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    background-color: #00fff2;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+.projectInfo a:hover{
+    background-color: rgba(0, 0, 0, 0.062);
+    color: #00fff2;
+    box-shadow: 1px 1px 2px #00fff2, -1px -1px 2px #00fff2;
+}
+.projectHiddenInfo a:hover{
+    background-color: rgba(0, 0, 0, 0.062);
+    color: #00fff2;
+    box-shadow: 1px 1px 2px #00fff2, -1px -1px 2px #00fff2;
+}
+
+@media (max-width: 790px){
+    .myPro{
+        text-align: center;
+        margin-right: 10%;
+    }
+    .projectsContainer{
+        position: relative;
+        top: 20px;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .hiddenProjects{
+        position: relative;
+        top: 20px;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .projectCard{
+        width: 200px;
+    }
+    .showBtn{
+        margin-left: 45%;
+    }
+}
+@media (max-width: 1030px){
+    .projectInfo{
+        font-size: 90%;
+    }
+    .hiddenProjects{
+        font-size: 90%;
+    }
+}
+@media (max-width: 540px){
+    .showBtn{
+        margin-left: 42%;
+    }
+    .projectInfo{
+        font-size: 100%;
+    }
+    .hiddenProjects{
+        font-size: 100%;
+    }
+}
