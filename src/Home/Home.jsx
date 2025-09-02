@@ -6,11 +6,10 @@ function Home({ innerRef }){
     return(
         <section id="home" ref={innerRef} className={styles.mainContainer} >
         <div className={styles.container} >
-            <h4>Software</h4>
+            <h4>Software Engineer</h4>
             <h2 className={styles.animatedT} >Hi, I'm <span></span></h2>
-            <p> I don't just build web application — I create fast, responsive, and 
-                user-focused web experiences that drive results. My experience with frameworks like React, Next.js,
-                and Node.js has allowed me to develop a keen eye for detail and an ability to deliver high-quality results.
+            <p> I’m a software engineer skilled in Python, JavaScript, SQL, 
+                and AWS — Passionate about building technology that works for people. Good at solving problems with clean, effective code. 
             </p>
             <div className={styles.icons}>
                 <a href={myCv} download="PitsoCV.pdf" className={styles.cvBtn}>Download CV</a>

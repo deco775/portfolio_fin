@@ -14,21 +14,21 @@ function TechSkills({ innerRef }){
                 <div className={`${styles.pro} ${styles.firstPro}`}>
                     <h3>Programming Languages</h3>
                     <ul>
-                        <li>C</li>
                         <li>Python</li>
                         <li>JavaScript</li>
-                        <li>React Native <b style={{fontStyle: "italic", fontSize: "80%"}}>(js framework)</b></li>
+                        <li>SQL and AWS</li>
+                        <li>Flutter <b style={{fontStyle: "italic", fontSize: "80%"}}> (Dart)</b></li>
                     </ul>
                     <img className={styles.logos} src={logo1}/>
                 </div>
                 <div className={`${styles.pro} ${styles.secondPro}`}>
                     <h3>Web Devevlopment</h3>
                     <ul>
-                        <li>HTML, CSS and JavaScript</li>
-                        <li>React & Next.js</li>
-                        <li>Node & Express.js</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>React.js</li>
+                        <li>Node.js</li>
                         <li>Flask</li>
-                        <li>MongoDB</li>
                         <li>MySQL</li>
                     </ul>
                     <img className={styles.logos} src={logo2}/>

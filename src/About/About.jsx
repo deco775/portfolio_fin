@@ -13,11 +13,10 @@ export default function About({ innerRef }) {
             <div className={styles.aboutMeContainer}>
                 <h2>About Me</h2>
                 <p className={styles.aboutMeMsg}>
-                    I am a Software Engineer with a strong passion for building efficient and scalable
-                    full-stack web application. I have a solid foundation in both front-end and back-end development. 
-                    my proficiency in frameworks like React, Next.js, Css, combined with my experience using Node.js and
-                    Express.js allows me to tackle complex projects. I am dedicated in delivering top-notch solutions that exceed
-                    client expectations.
+                    I’m a software engineer passionate about creating solutions that make a difference.
+                    I enjoy solving complex problems, learning new technologies, and turning ideas into working software. 
+                    Outside of coding, I love exploring tech trends and finding creative ways to improve digital experiences.
+                     I also work with React, Node.js, HTML, CSS, and PHP to create full-stack solutions.
                 </p>
                 <div className={styles.skillsContainer}>
                     <a className={`${styles.aSkills} ${activeTab === "skills" ? styles.activeTab : ""}`}  onClick={() => setActiveTab("skills")}>Skills</a>
@@ -28,9 +27,9 @@ export default function About({ innerRef }) {
                 <div className={styles.subSkillsContainer}>
                     {activeTab === "skills" && (
                         <div className={styles.skillSet}>
-                            <p className={styles.webdev}>UI/UX design</p>
-                            <p className={styles.webdev}>Web app development</p>
-                            <p className={styles.webdev}>Responsive web design</p>
+                            <p className={styles.webdev}>Full-stack development</p>
+                            <p className={styles.webdev}>Database management</p>
+                            <p className={styles.webdev}>API developement and intergration</p>
                             <p className={styles.webdev}>App development</p>
                             <p className={styles.softSkills} >Soft skills</p>
                             <ul>
@@ -63,7 +62,7 @@ export default function About({ innerRef }) {
                     )}
                     {activeTab === "education" && (
                         <div className={styles.skillSet}>
-                            <p className={styles.qualification} >Software Engineer</p>
+                            <p className={styles.qualification} > Higher Certificate in Software Engineering</p>
                             <p className={styles.qualifiDesc} >ALX Africa <small> – 12 months Software Engineering program</small></p>
                             <p className={styles.qualification}>Bachelor of Education <small>( Mathematics Major )</small> </p>
                             <p className={styles.qualifiDesc}>University of Pretoria</p>
